@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Lesotho | Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Discover Lesotho</h1>
+
+        <nav>
+            <a href="NEO.html">Home</a>
+            <a href="ABOUT.html">About Lesotho</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contact Us</h2>
+
+            <p>
+                Would you like to learn more about visiting Lesotho?
+                Complete the form below.
+            </p>
+
+            <form id="contactForm">
+                <label for="name">Full name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <p id="formMessage"></p>
+        </section>
+
+        <section>
+            <h2>Plan Your Visit</h2>
+
+            <form id="bookingForm">
+                <label for="destination">Choose a destination:</label>
+                <select id="destination" name="destination" required>
+                    <option value="">Select a destination</option>
+                    <option value="Katse Dam">Katse Dam</option>
+                    <option value="Mountains">Mountain Adventures</option>
+                    <option value="Waterfalls">Waterfalls</option>
+                </select>
+
+                <label for="visitors">Number of visitors:</label>
+                <input type="number" id="visitors" name="visitors"
+                       min="1" value="1" required>
+
+                <label for="days">Number of days:</label>
+                <input type="number" id="days" name="days"
+                       min="1" value="1" required>
+
+                <button type="submit">Calculate Trip</button>
+            </form>
+
+            <p id="tripCost"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Discover Lesotho Tourism</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

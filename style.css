@@ -1,0 +1,316 @@
+css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background-color: ivory;
+    color: black;
+    line-height: 1.8;
+}
+
+header {
+    background-color: black;
+    color: gold;
+    padding: 35px 8%;
+    text-align: left;
+    border-bottom: 5px solid goldenrod;
+}
+
+header h1 {
+    font-size: 38px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+header p {
+    color: white;
+    margin-top: 8px;
+}
+
+nav {
+    background-color: white;
+    padding: 18px 8%;
+    border-bottom: 1px solid lightgray;
+    text-align: left;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin-right: 25px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: goldenrod;
+    border-bottom: 2px solid goldenrod;
+}
+
+main {
+    width: 84%;
+    max-width: 1250px;
+    margin: 50px auto;
+}
+
+section {
+    margin-bottom: 55px;
+}
+
+h2 {
+    color: black;
+    font-size: 30px;
+    margin-bottom: 20px;
+    border-left: 5px solid goldenrod;
+    padding-left: 15px;
+}
+
+h3 {
+    color: darkgoldenrod;
+    margin-bottom: 12px;
+}
+
+p {
+    margin-bottom: 18px;
+}
+
+.welcome {
+    background-color: black;
+    color: white;
+    padding: 45px;
+    text-align: left;
+    border-bottom: 7px solid goldenrod;
+}
+
+.welcome h2 {
+    color: gold;
+    border-left: none;
+    padding-left: 0;
+    font-size: 38px;
+}
+
+.welcome p {
+    max-width: 750px;
+}
+
+.welcome img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    margin-top: 25px;
+    filter: brightness(85%);
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 0 0 25px;
+    box-shadow: none;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.card h3,
+.card p,
+.card a,
+.card button {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card h3 {
+    font-size: 22px;
+}
+
+button,
+input[type="submit"] {
+    background-color: black;
+    color: gold;
+    border: 1px solid goldenrod;
+    padding: 13px 25px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: goldenrod;
+    color: black;
+}
+
+form {
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 35px;
+    max-width: 750px;
+    margin: 30px 0;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+input,
+textarea,
+select {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    margin-top: 7px;
+    margin-bottom: 18px;
+    border: 1px solid silver;
+    background-color: ivory;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid goldenrod;
+    border-color: goldenrod;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border: 5px solid white;
+    outline: 1px solid lightgray;
+    transition: opacity 0.3s;
+}
+
+.gallery img:hover {
+    opacity: 0.75;
+}
+
+#search {
+    max-width: 600px;
+    padding: 15px;
+    margin: 25px 0;
+    border: 2px solid black;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 35px 8%;
+    border-top: 5px whitesmoke;
+    text-align: left;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+a {
+    color: darkgreen;
+}
+
+a:hover {
+    color: black;
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        width: 90%;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .welcome img {
+        height: 350px;
+    }
+
+    .gallery img {
+        height: 280px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        padding: 25px 5%;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav {
+        padding: 15px 5%;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 10px 5px 0;
+    }
+
+    main {
+        width: 92%;
+        margin: 25px auto;
+    }
+
+    .welcome {
+        padding: 22px;
+    }
+
+    .welcome h2 {
+        font-size: 27px;
+    }
+
+    .welcome img {
+        height: 240px;
+    }
+
+    .card-container,
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery img {
+        height: 250px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+}
